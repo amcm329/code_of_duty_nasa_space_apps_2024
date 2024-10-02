@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NASA Apps Challenge 2024</title>
+
+    <link rel="stylesheet" href="css/styles.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+</head>
+
+
+<body class="appBackground">
+
+    <div class="headers-container">
+	
+         <img src="static/nasa_logo.png" class="nasa-logo-square">
+		 
+		 <img src="static/waverse_final.png" class="product-logo-square">
+		 
+	
+	</div>
+	
+	<br>
+
+    <br>
+
+    <div class="tabs-container">
+
+        <div class="tabs">
+		
+		    <!-- onmouseover event https://www.w3schools.com/howto/howto_js_hover_tabs.asp -->
+
+            <button type="button" class="tab-button" onmouseover="openTab('tab1')">
+			
+                   <strong>ABOUT OUR PROJECT</strong>
+				   
+                   <div id="container-stars">
+                        <div id="stars"></div>
+                   </div>
+
+                   <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                  </div>
+				  
+            </button>
+
+
+            <button type="button" class="tab-button" onmouseover="openTab('tab2')">
+			
+                   <strong>MOON SEISMIC ANALYSIS</strong>
+				   
+                   <div id="container-stars">
+                        <div id="stars"></div>
+                   </div>
+
+                   <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                  </div>
+				  
+            </button>
+			 
+			 
+			<button type="button" class="tab-button" onmouseover="openTab('tab3')">
+			
+                   <strong>MARS SEISMIC ANALYSIS</strong>
+				   
+                   <div id="container-stars">
+                        <div id="stars"></div>
+                   </div>
+
+                   <div id="glow">
+                        <div class="circle"></div>
+                        <div class="circle"></div>
+                  </div>
+				  
+            </button>
+
+    		<!-- button class="tab-button" onclick="openTab('tab1')">Tab 1</button-->
+            <!-- button class="tab-button" onclick="openTab('tab2')">Tab 2</button-->
+            <!-- button class="tab-button" onclick="openTab('tab3')">Tab 3</button-->
+        
+	
+		
+        </div>		
+		
+        <div id="tab1" class="tab-content" color="white">
+            <h2>Welcome to Waverse!!!</h2>
+			
+			<h3>Waverse is an analytical tool focused on seismic activity, for both the Moon and Mars data but with additional insights.</h2>
+			
+			<h3>Check one of the tabs to get more information. </h2>
+			
+			
+            <h2>Authors:</h2>
+            <h3>Castillo, Aaron </h3>
+
+            <h3>Subias, Gilberto</h3>
+            <h3>Sanchez, Amiel </h3>
+			
+			<h3> Cites: Image taken from here: https://www.vecteezy.com/photo/48616459-serenity-venus-with-its-thick-atmosphere-illuminated-by-the-suns-rays-in-golden-glow-background-and-nature</h3>
+
+
+        </div>
+
+
+
+        <div id="tab2" class="tab-content" style="display:none;">
+		
+            <div class="controls">
+                
+				<label for="data2">Data Count:</label>
+				
+                <input type="range" id="data2" min="1" max="100" value="50" oninput="updateChart2()">
+				
+            </div>
+			
+            <canvas id="myChart2"></canvas>
+			
+        </div>
+
+
+
+        <div id="tab3" class="tab-content" style="display:none;">
+            <div class="controls">
+                <label for="data3">Data Count:</label>
+                <input type="range" id="data3" min="1" max="100" value="50" oninput="updateChart3()">
+            </div>
+            <canvas id="myChart3"></canvas>
+        </div>
+		
+
+    </div>
+
+    <script src="scripts/script.js"></script>
+
+</body>
+
+</html>
