@@ -84,4 +84,4 @@ function updateChart3() {
 }
 
 // Open the first tab by default
-openTab('tab1');
+//openTab('tab1');
