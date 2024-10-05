@@ -4,27 +4,25 @@
 
 <head>
 
-    <meta charset="utf-8">
-
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>NASA Apps Challenge 2024</title>
-
     <link rel="stylesheet" href="css/styles.css">
-
+	
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+	
 </head>
 
-
+	
 <body class="appBackground">
 
     <div class="headers-container">
 	
-         <img src="static/nasa_logo.png" class="nasa-logo-square">
-		 
-		 <img src="static/waverse_final.png" class="product-logo-square">
-		 
+         <img src="static/logo/nasa_logo.png" class="nasa-logo-square">	 
+		 <img src="static/logo/waverse_logo.png" class="product-logo-square">
 	
 	</div>
 	
@@ -84,23 +82,18 @@
                   </div>
 				  
             </button>
-
-    		<!-- button class="tab-button" onclick="openTab('tab1')">Tab 1</button-->
-            <!-- button class="tab-button" onclick="openTab('tab2')">Tab 2</button-->
-            <!-- button class="tab-button" onclick="openTab('tab3')">Tab 3</button-->
-        
-	
-		
+       	
         </div>		
+
+	
+        <div id="tab1" class="tab-content" color="white"> <!-- style="display:none;" -->
 		
-        <div id="tab1" class="tab-content" color="white" style="display:none;">
             <h2>Welcome to Waverse!!!</h2>
 			
 			<h3>Waverse is an analytical tool focused on seismic activity, for both the Moon and Mars data but with additional insights.</h2>
 			
 			<h3>Check one of the tabs to get more information. </h2>
-			
-			
+				
             <h2>Authors:</h2>
             <h3>Castillo, Aaron </h3>
 
@@ -108,17 +101,186 @@
             <h3>Sanchez, Amiel </h3>
 			
 			<h3> Cites: Image taken from here: https://www.vecteezy.com/photo/48616459-serenity-venus-with-its-thick-atmosphere-illuminated-by-the-suns-rays-in-golden-glow-background-and-nature</h3>
-
-
+			
         </div>
 
 
-
-        <div id="tab2" class="tab-content" style="display:none;">
+        <div id="tab2" class="tab-content"> <!-- style="display:none;" -->
 		
-            <div class="controls">
+		    <h2>Exploratory Data Analysis</h2>
+		    
+			<h3>This part corresponds to a visual representation of the information .</h2>
+		
+            <div class="carousel">
+
+ 	            <center><div class="carousel-label" id="image-label">Image: 1/75</div></center>
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-01-19HR00_evid00002.png" class="carousel-image active" alt="1970-01-19T20:25:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-03-25HR00_evid00003.png" class="carousel-image" alt="1970-03-25T03:32:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-03-26HR00_evid00004.png" class="carousel-image" alt="1970-03-26T20:17:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-04-25HR00_evid00006.png" class="carousel-image" alt="1970-04-25T01:14:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-04-26HR00_evid00007.png" class="carousel-image" alt="1970-04-26T14:29:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-06-15HR00_evid00008.png" class="carousel-image" alt="1970-06-15T19:00:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-06-26HR00_evid00009.png" class="carousel-image" alt="1970-06-26T20:01:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-07-20HR00_evid00010.png" class="carousel-image" alt="1970-07-20T05:06:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-07-20HR00_evid00011.png" class="carousel-image" alt="1970-07-20T11:44:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-09-26HR00_evid00013.png" class="carousel-image" alt="1970-09-26T19:57:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-10-24HR00_evid00014.png" class="carousel-image" alt="1970-10-24T11:31:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-11-12HR00_evid00015.png" class="carousel-image" alt="1970-11-12T12:50:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-12-11HR00_evid00017.png" class="carousel-image" alt="1970-12-11T07:22:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-12-27HR00_evid00019.png" class="carousel-image" alt="1970-12-27T20:34:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-12-31HR00_evid00021.png" class="carousel-image" alt="1970-12-31T15:41:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-01-15HR00_evid00022.png" class="carousel-image" alt="1971-01-15T12:40:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-01-28HR00_evid00023.png" class="carousel-image" alt="1971-01-28T14:59:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-01-29HR00_evid00024.png" class="carousel-image" alt="1971-01-29T18:21:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-02-09HR00_evid00026.png" class="carousel-image" alt="1971-02-09T03:42:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-03-25HR00_evid00028.png" class="carousel-image" alt="1971-03-25T15:18:00">
+
+                <!-- img src="static/moon/eda/xa.s12.00.mhz.1971-04-13HR00_evid00029.png" class="carousel-image" alt="1971-04-13T12:55:00" -->
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-04-17HR00_evid00030.png" class="carousel-image" alt="1971-04-17T07:04:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-05-12HR00_evid00031.png" class="carousel-image" alt="1971-05-12T08:05:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-05-12HR00_evid00032.png" class="carousel-image" alt="1971-05-12T09:45:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-05-13HR00_evid00033.png" class="carousel-image" alt="1971-05-13T03:00:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-05-23HR00_evid00034.png" class="carousel-image" alt="1971-05-23T22:20:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-06-12HR00_evid00035.png" class="carousel-image" alt="1971-06-12T10:51:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-09-25HR00_evid00042.png" class="carousel-image" alt="1971-09-25T08:57:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-10-18HR00_evid00043.png" class="carousel-image" alt="1971-10-18T03:19:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-10-20HR00_evid00044.png" class="carousel-image" alt="1971-10-20T18:08:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-10-31HR00_evid00045.png" class="carousel-image" alt="1971-10-31T05:30:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-11-14HR00_evid00046.png" class="carousel-image" alt="1971-11-14T04:17:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-01-04HR00_evid00049.png" class="carousel-image" alt="1972-01-04T06:35:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-03-12HR00_evid00052.png" class="carousel-image" alt="1972-03-12T18:00:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-05-11HR00_evid00055.png" class="carousel-image" alt="1972-05-11T13:35:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-06-16HR00_evid00060.png" class="carousel-image" alt="1972-06-16T16:11:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-07-17HR00_evid00067.png" class="carousel-image" alt="1972-07-17T07:50:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-07-17HR00_evid00068.png" class="carousel-image" alt="1972-07-17T21:56:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-07-28HR00_evid00070.png" class="carousel-image" alt="1972-07-28T02:23:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-07-31HR00_evid00071.png" class="carousel-image" alt="1972-07-31T18:08:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-12-02HR00_evid00083.png" class="carousel-image" alt="1972-12-02T07:58:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-12-03HR00_evid00084.png" class="carousel-image" alt="1972-12-03T02:38:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-01-18HR00_evid00088.png" class="carousel-image" alt="1973-01-18T23:01:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-01-31HR00_evid00091.png" class="carousel-image" alt="1973-01-31T00:44:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-03-01HR00_evid00093.png" class="carousel-image" alt="1973-03-01T07:15:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-03-13HR00_evid00094.png" class="carousel-image" alt="1973-03-13T08:01:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-03-24HR00_evid00097.png" class="carousel-image" alt="1973-03-24T19:23:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-05-14HR00_evid00104.png" class="carousel-image" alt="1973-05-14T00:44:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-06-05HR00_evid00107.png" class="carousel-image" alt="1973-06-05T02:38:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-06-05HR00_evid00108.png" class="carousel-image" alt="1973-06-05T11:10:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-06-18HR00_evid00109.png" class="carousel-image" alt="1973-06-18T01:42:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-06-27HR00_evid00112.png" class="carousel-image" alt="1973-06-27T18:36:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-03HR00_evid00113.png" class="carousel-image" alt="1973-07-03T18:15:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-04HR00_evid00114.png" class="carousel-image" alt="1973-07-04T02:46:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-20HR00_evid00117.png" class="carousel-image" alt="1973-07-20T19:02:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-28HR00_evid00120.png" class="carousel-image" alt="1973-07-28T00:52:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-29HR00_evid00121.png" class="carousel-image" alt="1973-07-29T23:31:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-08-21HR00_evid00127.png" class="carousel-image" alt="1973-08-21T12:17:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-01-10HR00_evid00136.png" class="carousel-image" alt="1974-01-10T23:21:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-02-07HR00_evid00137.png" class="carousel-image" alt="1974-02-07T06:21:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-02-12HR00_evid00138.png" class="carousel-image" alt="1974-02-12T22:30:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-03-25HR00_evid00140.png" class="carousel-image" alt="1974-03-25T16:58:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-04-08HR00_evid00141.png" class="carousel-image" alt="1974-04-08T08:40:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-04-19HR00_evid00142.png" class="carousel-image" alt="1974-04-19T18:34:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-04-26HR00_evid00144.png" class="carousel-image" alt="1974-04-26T09:18:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-04-27HR00_evid00145.png" class="carousel-image" alt="1974-04-27T14:18:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-06-25HR00_evid00149.png" class="carousel-image" alt="1974-06-25T00:23:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-07-06HR00_evid00150.png" class="carousel-image" alt="1974-07-06T02:57:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-07-06HR00_evid00151.png" class="carousel-image" alt="1974-07-06T14:14:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-07-11HR00_evid00152.png" class="carousel-image" alt="1974-07-11T00:52:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-07-17HR00_evid00153.png" class="carousel-image" alt="1974-07-17T12:05:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-10-14HR00_evid00156.png" class="carousel-image" alt="1974-10-14T17:43:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1975-04-12HR00_evid00191.png" class="carousel-image" alt="1975-04-12T18:15:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1975-05-04HR00_evid00192.png" class="carousel-image" alt="1975-05-04T10:05:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1975-06-24HR00_evid00196.png" class="carousel-image" alt="1975-06-24T16:03:00">
+
+                <img src="static/moon/eda/xa.s12.00.mhz.1975-06-26HR00_evid00198.png" class="carousel-image" alt="1975-06-26T03:24:00">
+            
+			    <button class="carousel-button" onclick="changeImageCarousel2(-1)">&#10094;</button>
+          
+			    <button class="carousel-button" onclick="changeImageCarousel2(1)">&#10095;</button>
+				
+            </div>
+  
+  
+          <br>
+		  
+		  <br>
+		
+  		  <div class="controls">
                 
-				<label for="data2">Data Count:</label>
+				<label for="data2">Hours:</label>
 				
                 <input type="range" id="data2" min="1" max="100" value="50" oninput="updateChart2()">
 				
@@ -130,7 +292,14 @@
 
 
 
-        <div id="tab3" class="tab-content" style="display:none;">
+
+
+
+      
+
+
+        <div id="tab3" class="tab-content"> <!-- style="display:none;" -->
+		
             <div class="controls">
                 <label for="data3">Data Count:</label>
                 <input type="range" id="data3" min="1" max="100" value="50" oninput="updateChart3()">
@@ -138,10 +307,13 @@
             <canvas id="myChart3"></canvas>
         </div>
 		
-
+		
+		
     </div>
 
+
     <script src="scripts/script.js"></script>
+	
 
 </body>
 
