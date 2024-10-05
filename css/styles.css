@@ -5,12 +5,16 @@ body {
 
 .appBackground {
     position: relative;
-    background-image: url("../static/sun_background_35_percent_opacity.jpg");
+    background-image: url("../static/background/sun_background_35_percent_opacity.jpg");
     background-repeat:no-repeat;
     background-size: cover;
     background-blend-mode: darken;
 }
 
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+/********************LOGOS SECTION************************/
 
 .headers-container{
 	padding: 7px; /*both images displayed not on the top*/
@@ -35,15 +39,59 @@ Width is greater.
 		
 }
 
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+/********************TABS SECTION*************************/
 
 /*
   Container for tabs
   Use flex-direction to put all of the elements in column or row
 */
-.tabs-container {
+.tabs-container {	
     display: flex;
     flex-direction: column;
     width: 100%;
+  	  
+	/*  
+	position: relative;
+    top: 250px;
+    right: -420px;
+	*/
+
+}
+
+.tab-content {
+	
+    /*
+	Border for tab.
+	*/	
+    border: 2px solid #007bff;
+
+    padding: 20px;
+	
+    flex: 1;
+    height: 1000px; /* Set a height for scroll */
+    overflow: auto; /* Enable scrolling */
+	
+	/*
+	  Removed to put the next one: 
+	  background:white;
+	*/
+	background-color: rgba(255, 255, 255, .4);
+	
+	opacity: 0;
+    transition: opacity 0.999999s ease-in-out;
+
+}
+
+.tab-content:active{
+      opacity:1;
+}
+
+
+.controls {
+    margin-bottom: 10px;
 }
 
 /*Use flex-direction to put all of the elements in column or row*/
@@ -51,7 +99,13 @@ Width is greater.
 	display: flex;
     margin: 20px 0px;
 	flex-direction: rows;
+	
 }
+
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+/*******************BUTTONS SECTION***********************/
 
 /*
   Space button: 
@@ -239,34 +293,74 @@ strong {
   }
 }
 
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
+/******************carousel SECTION**********************/
 
 
+.carousel-label {
+    transform: translateY(140%);
+    font-weight: bold;
+    font-size: 1.8em;
+}
 
-/*
-.tab-button {
-    padding: 10px 15px;
+
+.carousel {
+    position: relative;
+    max-width: 600px;
+    margin: auto;
+	transform: translateY(-3%);
+	
+}
+
+.carousel-image {
+    display: none;
+    width: 100%;
+	transform: translateY(10%);
+    visibility: hidden; 
+	
+	/*
+	Blue border to the images.
+	*/
+	border: 4px solid #0000ff;
+ 
+	opacity: 0;
+	transition: opacity 0.3s ease-in-out;
+
+}
+
+.carousel-image.active {
+	visibility: visible;
+    opacity: 1; 
+    display: block;
+
+}
+
+.carousel-button {
+    position: absolute;
+    top: 8%;
+    transform: translateY(-50%);
+	transform: scale(3);    
+
+    /*
+	Buttons have a color similar to the background.
+	*/
+    background-color: rgba(255, 255, 255, 0);
+	
     border: none;
-    background-color: #007bff;
-    color: white;
+    padding: 0px;
     cursor: pointer;
-    margin-right: 5px;
 }
 
-.tab-button:hover {
-    background-color: #0056b3;
-}
-*/
-
-
-.tab-content {
-    border: 1px solid #007bff;
-    padding: 20px;
-    flex: 1;
-    height: 400px; /* Set a height for scroll */
-    overflow: auto; /* Enable scrolling */
-	background:white;
+.carousel-button:active {
+    color: #0000ff;
 }
 
-.controls {
-    margin-bottom: 10px;
+.carousel-button:first-of-type {
+    left: 10px;
+}
+
+.carousel-button:last-of-type {
+    right: 10px;
 }
