@@ -33,7 +33,6 @@ The project is organized with the following folder structure:
 ├── css/            # Style files for the dashboard.
 ├── index.html      # Main page of the dashboard. 
 ├── .gitignore
-├── .project-metadata.yaml
 ├── LICENSE.txt
 └── README.md
 ```
