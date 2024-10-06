@@ -14,6 +14,8 @@ By processing NASA data from the Moon and Mars, the project employs the followin
 
 **Note: these were trained by using Google Colab and in the case of RNN, the GPU option.**
 
+<br>
+
 After this, we get the catalog’s information for each observation that our best classifier predicts as seismic.
 			
 The final output is a catalog of true seismic events along with detailed plots for analysis which are deployed in an user-friendly interface.
