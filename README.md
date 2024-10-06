@@ -1,4 +1,4 @@
-<p align="center"> <h1> NASA Space Apps Challenge 2024 <h1> </p>
+<p align="center"> <h1> NASA Space Apps Challenge 2024 </h1> </p>
 
 <img align="left" src="static/logo/nasa_logo.png" width="120 px" height="90 px"> 
 
