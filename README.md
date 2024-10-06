@@ -47,7 +47,7 @@ The deployment in this case consists in the visualization of all elements that w
 
 THIS SITE 
 
-Here, all summarizations and important visual aspects are considered in order to facilitate data comprehension.
+Here, all summarizations and important visual aspects are included in order to facilitate data comprehension.
 
 Given its limited resources, additional technical and analytical features are out of this scope, nevertheless, you can find them HERE 
 
