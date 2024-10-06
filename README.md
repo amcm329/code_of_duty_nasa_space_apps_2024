@@ -1,4 +1,4 @@
-![NASA](static/logo/nasa_logo.png=250x250) | ![waverse](static/logo/waverse_logo.png=250x250) |
+![NASA](static/logo/nasa_logo.png|width=100|height=100) | ![waverse](static/logo/waverse_logo.png=250x250) |
 
 
  # <center> NASA Space Apps Challenge 2024 </center>
