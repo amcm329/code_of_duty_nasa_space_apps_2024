@@ -39,15 +39,21 @@ The project is organized with the following folder structure:
 └── README.md
 ```
 
+Regarding the final file with all the predictions, it can be found HERE. 
+
 ## Deployment
 
-The deployment in this case consists in the visualization of all elements that we. Based on Github pages, we have been able to come up with a simple yet efficient hosting, which is available on this site: 
+The deployment in this case consists in the visualization of all elements that we have considered throughout this project's development. Based on Github pages, we have been able to come up with a simple yet efficient hosting, which is available on this site:
+
+THIS SITE 
 
 Here, all summarizations and important visual aspects are considered in order to facilitate data comprehension.
 
+Given its limited resources, additional technical and analytical features are out of this scope, nevertheless, you can find them HERE 
+
 ----
 ### **Note**
-Because of the nature of data available, especially .
+Because of the nature of data available, especially for Mars regarding its training set, we've mixed a.
 
 ----
 ### **Authors**
