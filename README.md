@@ -1,5 +1,6 @@
 ![NASA](static/logo/nasa_logo.png) | ![waverse](static/logo/waverse_logo.png=250x250) |
 
+![](https://gyazo.com/eb5c5741b6a9a16c692170a41a49c858.png | width=100)
 
  # <center> NASA Space Apps Challenge 2024 </center>
 
