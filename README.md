@@ -1,6 +1,6 @@
 # NASA Space Apps 2024
 
-<img src="static/logo/waverse_logo.png" width="200 px" height="200 px">
+<img src="static/logo/waverse_logo.png" width="100 px" height="200 px">
 
 CECALT **(CEnter of meteorologiCAL Technology)** is an integral project whose objective is to increase the sensitivity of hurricane prediction systems. It contains all the code and data needed to deploy an end-to-end machine learning project on a running CML instance.
 
