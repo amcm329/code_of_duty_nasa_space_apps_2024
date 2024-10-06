@@ -51,4 +51,18 @@ Because of the nature of data available, especially .
 
 ----
 ### **Authors**
-DO NOT remove cdsw-build.sh as it will cause troubles in the model deployment.
+
+<center>			
+	<table>
+               <tr>
+                   <th><h2><a href="https://www.linkedin.com/in/amcm329/">Aaron Castillo</a></h2></th>
+                   <th><h2><a href="https://www.linkedin.com/in/gilberto-s-a64757121/">Gilberto Subias</a></h2></th>
+                   <th><h2><a href="https://www.linkedin.com/in/javier-amiel-irais-s%C3%A1nchez-silva-86a309167/">Javier Sanchez</a></h2></th>
+               </tr>
+               <tr>
+	           <td> <img src="static/team/Aaron_Castillo.jpg" width="250 px" height="250 px"> </td>
+                   <td> <img src="static/team/Gilberto_Subias_Garcia.jpeg" width="250 px" height="250 px"> </td>
+                   <td> <img src="static/team/Javier_Sanchez.png" width="250 px" height="250 px"> </td>
+               </tr>	   
+        </table>			
+</center>
