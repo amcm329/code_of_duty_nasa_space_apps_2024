@@ -9,7 +9,7 @@
 </center>
 
 <center>
-<p float="center">
+<p float="left">
  <img src="static/logo/nasa_logo.png" width="120 px" height="90 px">
                     NASA Space Apps 2024
  <img src="static/logo/waverse_logo.png" width="150 px" height="90 px">
