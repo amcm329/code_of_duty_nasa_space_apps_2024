@@ -12,7 +12,7 @@ By processing NASA data from the Moon and Mars, the project employs the followin
 - XGBoost 
 - Recurrent Neural Network (RNN)
 
-** Note: these were trained by using Google Colab and in the case of RNN, the GPU option. **
+**Note: these were trained by using Google Colab and in the case of RNN, the GPU option.**
 
 After this, we get the catalog’s information for each observation that our best classifier predicts as seismic.
 			
