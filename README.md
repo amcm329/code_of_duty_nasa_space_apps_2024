@@ -5,55 +5,42 @@
 <br>
 <br>
 
-CECALT **(CEnter of meteorologiCAL Technology)** is an integral project whose objective is to increase the sensitivity of hurricane prediction systems. It contains all the code and data needed to deploy an end-to-end machine learning project on a running CML instance.
+**WAVERSE** is an Artificial Intelligence end-to-end pipeline that first identifies potential seismic events and then extracts features for deeper analysis.
+			
+By processing NASA data from the Moon and Mars, the project employs the following models to classify seismic events:
 
+- XGBoost 
+- Recurrent Neural Network (RNN)
 
-Its primary goal is to build an ensemble learning model that combines the predictors of three base models:
+After this, we get the catalog’s information for each observation that our best classifier predicts as seismic.
+			
+The final output is a catalog of true seismic events along with detailed plots for analysis which are deployed in an user-friendly interface.
 
-- Random Forest Regressor
-- XGBoost Regressor
-- Neuronal Network Regressor
+The dataset used in this project is seismic data from NASA’s Apollo and Mars InSight Lander missions, which provide raw seismic recordings from the Moon and Mars, respectively. 
 
-To forecast the wind speed based on geographical and meteorological conditions, like in the following example: 
+These datasets were essential in training and testing the machine learning models. Our project is aligned with NASA’s goal of understanding the seismic activity of celestial bodies.
 
-![CECALT_OUTPUT](static/CECALT_2.PNG)
-
-The ensembling model uses a voting strategy to make its predictions, where each base model has an equal weight in the final prediction.
-
-This model is trained on a dataset of wind speed data and evaluated using MSE (Mean Squared Error), MAE (Mean Absolute Error), R2 score and RMSE (Root Mean Square Error) metrics.
-
-The dataset used in this project comes from the [National Hurricane Center](https://www.nhc.noaa.gov/) and the [Meteostat Project](https://meteostat.net/en/), with the aid of [analysis](scripts/exploratory_data_analysis.ipynb) and [transformations](scripts/transform_and_load_data.py).
-
-
+----
 ## Project Structure
 
 The project is organized with the following folder structure:
 
 ```
 .
-├── app/            # Sources needed to launch the application
-├── scripts/        # Scripts used for the creation and deploy of the end-to-end solution
-├── src/            # All the prebuilt models and datasets necessary for the project
+├── scripts/        # Scripts used for the creation and deploy of the dashboard
+├── src/            # All the notebooks and datasets necessary for the pre-processing and training.
 ├── static/         # All images used in the project
+├── css/            # Style files for the dashboard.
+├── index.html      # Main page of the dashboard. 
 ├── .gitignore
 ├── .project-metadata.yaml
-├── CECALT Hurricane Behavior Predictor_SOP.pdf
 ├── LICENSE.txt
-├── README.md
-├── cdsw-build.sh  # This file is IMPORTANT for model deployment as additional libraries are installed here.
-└── requirements.txt
-
+└── README.md
 ```
-The file  `CECALT Hurricane Behavior Predictor_SOP.pdf` contains a deeper walk-through of the project. 
 
+## Deploying 
 
-## Deploying on Cloudera
-
-The ways of executing the project are the following ones: 
-
-1. **As AMP** - In a CML workspace, click "New Project", add a Project Name, select "AMPs" as the Initial Setup option, copy in the [repo URL](https://github.com/amcm329/cod_hurricane_prediction), click "Create Project", click "Configure Project"
-
-2. **Manual Setup** - In a CML workspace, click "New Project", add a Project Name, select "Git" as the Initial Setup option, copy in the [repo URL](https://github.com/amcm329/cod_hurricane_prediction), click "Create Project". Then, follow the steps listed [in this document](scripts/README.md).
+Based on Github pages, we have been able to 
 
 ----
 ### **Note**
