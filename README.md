@@ -18,7 +18,9 @@ The final output is a catalog of true seismic events along with detailed plots f
 
 The dataset used in this project is seismic data from NASA’s Apollo and Mars InSight Lander missions, which provide raw seismic recordings from the Moon and Mars, respectively. 
 
-These datasets were essential in training and testing the machine learning models. Our project is aligned with NASA’s goal of understanding the seismic activity of celestial bodies.
+These datasets were essential in training and testing the machine learning models. 
+
+Our project is aligned with NASA’s goal of understanding the seismic activity of celestial bodies.
 
 ----
 ## Project Structure
