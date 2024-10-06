@@ -1,5 +1,5 @@
 <img align="left" src="static/logo/nasa_logo.png" width="120 px" height="90 px"> 
-<img align="right" src="static/logo/waverse_logo.png" width="120 px" height="70 px" style="position: relative; top: 120px;">
+<img align="right" src="static/logo/waverse_logo.png" width="120 px" height="70 px" style="position: relative; top: 120 px;">
 <h1> <p align="center">NASA Space Apps Challenge 2024</p> </h1> 
 
 <br>
