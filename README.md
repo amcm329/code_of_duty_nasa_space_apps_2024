@@ -39,21 +39,19 @@ The project is organized with the following folder structure:
 └── README.md
 ```
 
-Regarding the final file with all the predictions, it can be found HERE. 
+Regarding the final file with all the predictions, it can be found ![here](src/all_predictions.csv) 
 
 ## Deployment
 
-The deployment in this case consists in the visualization of all elements that we have considered throughout this project's development. Based on Github pages, we have been able to come up with a simple yet efficient hosting, which is available on this site:
+The deployment in this case consists in the visualization of all elements that we have considered throughout this project's development. Based on Github pages, we have been able to come up with a simple yet efficient hosting, which is available ![here](https://amcm329.github.io/codeofduty_nasa_space_apps_2024/):
 
-THIS SITE 
+All summarizations and important visual aspects are included in order to facilitate data comprehension.
 
-Here, all summarizations and important visual aspects are included in order to facilitate data comprehension.
-
-Given its limited resources, additional technical and analytical features are out of this scope, nevertheless, you can find them HERE 
+Given its limited resources, additional technical and analytical features are out of this scope, nevertheless, you can find them ![here](src/)
 
 ----
 ### **Note**
-Because of the nature of data available, especially for Mars regarding its training set, we've mixed a.
+Because of the nature of data available, especially for Mars regarding its training set, we've mixed all of the data available and created one single analysis.
 
 ----
 ### **Authors**
