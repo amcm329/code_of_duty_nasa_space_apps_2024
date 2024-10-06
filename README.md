@@ -1,7 +1,7 @@
 <center>
        <table>
                <tr>
-                    <th><img src="static/logo/nasa_logo.png" width="150 px" height="90 px"></th>
+                    <th><img src="static/logo/nasa_logo.png" width="130 px" height="90 px"></th>
                     <th>NASA Space Apps 2024</th>
                     <th><img src="static/logo/waverse_logo.png" width="150 px" height="90 px"></th>
                </tr>
