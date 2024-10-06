@@ -37,14 +37,16 @@ The project is organized with the following folder structure:
 └── README.md
 ```
 
-## Deploying 
+## Deployment
 
-Based on Github pages, we have been able to 
+The deployment in this case consists in the visualization of all elements that we. Based on Github pages, we have been able to come up with a simple yet efficient hosting, which is available on this site: 
+
+Here, all summarizations and important visual aspects are considered in order to facilitate data comprehension.
 
 ----
 ### **Note**
-In general, the project contains mechanisms to guarantee a safe execution but if anything happens, it would be desirable to check both the [documentation](CECALT%20Hurricane%20Behavior%20Predictor_SOP.pdf) and the [technical configuration](scripts/README.md).
+Because of the nature of data available, especially .
 
 ----
-### **IMPORTANT**
+### **Authors**
 DO NOT remove cdsw-build.sh as it will cause troubles in the model deployment.
