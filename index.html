@@ -10,7 +10,7 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
 <html lang="en">
 
 <head>
-
+	
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>NASA Apps Challenge 2024</title>
@@ -18,9 +18,8 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
 	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-
 
 </head>
 
@@ -30,11 +29,11 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
     <div class="headers-container">
 	
          <img src="static/logo/nasa_logo.png" class="nasa-logo-square">	 
-		 <img src="static/logo/waverse_logo.png" class="product-logo-square">
+         <img src="static/logo/waverse_logo.png" class="product-logo-square">
 	
-	</div>
+    </div>
 	
-	<br>
+    <br>
 
     <br>
 
@@ -42,7 +41,7 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
 
         <div class="tabs">
 		
-		    <!-- onmouseover event https://www.w3schools.com/howto/howto_js_hover_tabs.asp -->
+	    <!-- onmouseover event https://www.w3schools.com/howto/howto_js_hover_tabs.asp -->
 
             <button type="button" class="tab-button" onmouseover="openTab('tab1')">
 			
@@ -74,9 +73,8 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
                   </div>
 				  
             </button>
-			 
-			 
-			<button type="button" class="tab-button" onmouseover="openTab('tab3')">
+			 	 
+	    <button type="button" class="tab-button" onmouseover="openTab('tab3')">
 			
                    <strong>MARS SEISMIC ANALYSIS</strong>
 				   
@@ -93,7 +91,7 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
        	
         </div>		
 
-	    <!-- ************************************************************************************************* -->
+	<!-- ************************************************************************************************* -->
         <!-- ************************************************************************************************* -->
         <!-- ************************************************************************************************* -->
 
@@ -101,7 +99,7 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
 		
             <center><h2>Welcome to WAVERSE!!!</h2><h8>by Code of Duty</h8></center>
 			
-			<br>
+		        <br>
 			
 			<h3>WAVERSE is an Artificial Intelligence end-to-end pipeline that first identifies potential seismic events and then extracts features for deeper analysis.</h3> 
 			
@@ -109,10 +107,10 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
 			
 			<ul>
 			
-                 <li><h3>XGBoost</h3></li>
-                 <li><h3>Recurrent Neural Network (RNN)</h3></li>
+                              <li><h3>XGBoost</h3></li>
+                              <li><h3>Recurrent Neural Network (RNN)</h3></li>
 				 
-            </ul> 
+                        </ul> 
 			
 			<h3><b> Note: these were trained by using Google Colab and in the case of RNN, the GPU option. </b></h3>
 
@@ -126,7 +124,7 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
 			
 			<br>
 			
-            <h3> The final predictions file can be found <a href="https://github.com/amcm329/codeofduty_nasa_space_apps_2024/blob/main/src/all_predictions.csv">here</a> </h3>
+                        <h3> The final predictions file can be found <a href="https://github.com/amcm329/codeofduty_nasa_space_apps_2024/blob/main/src/all_predictions.csv">here</a> </h3>
 			
 			<br>
 			
@@ -144,7 +142,7 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
 			
 			<br>
 			
-            <center><h2>Authors</h2></center>
+                        <center><h2>Authors</h2></center>
             
 			<center>
 			
@@ -179,11 +177,11 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
 		
 		    <center><h2>Exploratory Data Analysis</h2></center>
             
-			<h3>This part corresponds to a simple but detailed plot of the information provided by the corresponding training section:</h2>
+		    <h3>This part corresponds to a simple but detailed plot of the information provided by the corresponding training section:</h2>
 		
             <div class="carousel">
 
- 	            <center><div class="carousel-label2" id="image-label2">Image: 1/75</div></center>
+ 	        <center><div class="carousel-label2" id="image-label2">Image: 1/75</div></center>
 
                 <img src="static/moon/eda/xa.s12.00.mhz.1970-01-19HR00_evid00002.png" class="carousel-image2 active" alt="1970-01-19T20:25:00">
 
@@ -337,27 +335,27 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
 
                 <img src="static/moon/eda/xa.s12.00.mhz.1975-06-26HR00_evid00198.png" class="carousel-image2" alt="1975-06-26T03:24:00">
             
-			    <button class="carousel-button" onclick="changeImageCarousel2(-1)">&#10094;</button>
+		<button class="carousel-button" onclick="changeImageCarousel2(-1)">&#10094;</button>
           
-			    <button class="carousel-button" onclick="changeImageCarousel2(1)">&#10095;</button>
+		<button class="carousel-button" onclick="changeImageCarousel2(1)">&#10095;</button>
 				
             </div>
   
             <br>
 		  
-		    <br>
+	    <br>
 		
-		    <br>
+	    <br>
 		
-			<br>
+	    <br>
 		
-	        <center><h2>Testing</h2></center>
+	    <center><h2>Testing</h2></center>
             
-		    <h3>Now, we plot the files related to the testing section based on our <a href="https://github.com/amcm329/codeofduty_nasa_space_apps_2024/tree/main/src">analysis</a>, along with their predictions: </h2>
+	    <h3>Now, we plot the files related to the testing section based on our <a href="https://github.com/amcm329/codeofduty_nasa_space_apps_2024/tree/main/src">analysis</a>, along with their predictions: </h2>
 		   
-  		 	<div class="carousel"> 
+  	    <div class="carousel"> 
 
- 	            <center><div class="carousel-label21" id="image-label21">Image: 1/96. Seismic activity detected: True</div></center>
+ 	        <center><div class="carousel-label21" id="image-label21">Image: 1/96. Seismic activity detected: True</div></center>
 				
                 <img src="static/moon/test/xa.s12.00.mhz.1971-10-26HR00_evid00133.png" class="carousel-image21 active">
 
@@ -551,9 +549,9 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
 
                 <img src="static/moon/test/xa.s16.00.mhz.1973-12-18HR00_evid00487.png" class="carousel-image21">
 
-			    <button class="carousel-button-test" onclick="changeImageCarousel21(-1)">&#10094;</button>
+		<button class="carousel-button-test" onclick="changeImageCarousel21(-1)">&#10094;</button>
           
-			    <button class="carousel-button-test" onclick="changeImageCarousel21(1)">&#10095;</button>
+		<button class="carousel-button-test" onclick="changeImageCarousel21(1)">&#10095;</button>
 				
             </div>        
 				
@@ -566,39 +564,39 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
 
         <div id="tab3" class="tab-content">
 		 
-		    <center><h2>Exploratory Data Analysis</h2></center>
+	     <center><h2>Exploratory Data Analysis</h2></center>
             
-			<h3>This part corresponds to a simple but detailed plot of the information provided by the corresponding training section:</h2>
+	     <h3>This part corresponds to a simple but detailed plot of the information provided by the corresponding training section:</h2>
 		
-  		    <div class="carousel"> 
+  	     <div class="carousel"> 
 
- 	            <center><div class="carousel-label3" id="image-label3">Image: 1/2</div></center>
+ 	        <center><div class="carousel-label3" id="image-label3">Image: 1/2</div></center>
 				
                 <img src="static/mars/eda/XB.ELYSE.02.BHV.2022-02-03HR08_evid0005.png" class="carousel-image3 active" alt="2022-02-03HR08">
 
                 <img src="static/mars/eda/XB.ELYSE.02.BHV.2022-01-02HR04_evid0006.png" class="carousel-image3" alt="2022-01-02HR04">
 
-			    <button class="carousel-button" onclick="changeImageCarousel3(-1)">&#10094;</button>
+		<button class="carousel-button" onclick="changeImageCarousel3(-1)">&#10094;</button>
           
-			    <button class="carousel-button" onclick="changeImageCarousel3(1)">&#10095;</button>
+		<button class="carousel-button" onclick="changeImageCarousel3(1)">&#10095;</button>
 				
             </div>        
 				
             <br>
 		  
-	   	    <br>
+	    <br>
 			
-			<br>
+	    <br>
 		
-			<br>
+	    <br>
 		
-	        <center><h2>Testing</h2></center>
+	    <center><h2>Testing</h2></center>
             
-  		    <h3>Now, we plot the files related to the testing section based on our <a href="https://github.com/amcm329/codeofduty_nasa_space_apps_2024/tree/main/src">analysis</a>, along with their predictions: </h2>
+  	    <h3>Now, we plot the files related to the testing section based on our <a href="https://github.com/amcm329/codeofduty_nasa_space_apps_2024/tree/main/src">analysis</a>, along with their predictions: </h2>
 			
- 		    <div class="carousel"> 
+ 	    <div class="carousel"> 
 
- 	            <center><div class="carousel-label31" id="image-label31">Image: 1/9. Seismic activity detected: True</div></center>
+ 	        <center><div class="carousel-label31" id="image-label31">Image: 1/9. Seismic activity detected: True</div></center>
 
                 <img src="static/mars/test/XB.ELYSE.02.BHV.2021-05-02HR01_evid0017.png" class="carousel-image31 active">
 
@@ -618,9 +616,9 @@ Finally, we create 4 labels to put Image counters, and in the case of testing, t
 
                 <img src="static/mars/test/XB.ELYSE.02.BHV.2019-09-21HR03_evid0032.png" class="carousel-image31">
 				
-			    <button class="carousel-button-test" onclick="changeImageCarousel31(-1)">&#10094;</button>
+		<button class="carousel-button-test" onclick="changeImageCarousel31(-1)">&#10094;</button>
           
-			    <button class="carousel-button-test" onclick="changeImageCarousel31(1)">&#10095;</button>
+		<button class="carousel-button-test" onclick="changeImageCarousel31(1)">&#10095;</button>
 				
             </div>        
 				
