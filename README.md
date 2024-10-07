@@ -48,7 +48,7 @@ Regarding the final file with all the predictions, it can be found ![here](src/a
 
 The deployment in this case consists in the visualization of all elements that we have considered throughout this project's development. 
 
-Based on Github Pages service, we have been able to come up with a simple yet efficient hosting, which is available ![here](https://amcm329.github.io/codeofduty_nasa_space_apps_2024/)
+Based on Github Pages service, we have been able to come up with a simple yet efficient hosting, which is available <a href="https://amcm329.github.io/codeofduty_nasa_space_apps_2024/">here</a>
 
 All summarizations and important visual aspects are included in order to facilitate data comprehension.
 
