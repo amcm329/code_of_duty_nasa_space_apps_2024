@@ -37,6 +37,7 @@ The project is organized with the following folder structure:
 ├── scripts/        # Scripts used for the creation and deployment of the dashboard
 ├── static/         # All images used in the project. It also includes both training and testing images.
 ├── css/            # Style files for the dashboard.
+├── WAVERSE_SeismicDetectionAcrossTheSolarSystem.pdf #slides with key points on the project.
 ├── index.html      # Main page of the dashboard. 
 ├── LICENSE.txt
 └── README.md
