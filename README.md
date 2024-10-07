@@ -43,7 +43,7 @@ The project is organized with the following folder structure:
 └── README.md
 ```
 
-Regarding the final file with all the predictions, it can be found ![here](src/all_predictions.csv) 
+Regarding the final file (catalog), it can be found ![here](src/catalog.csv) 
 
 ## Deployment
 
