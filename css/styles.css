@@ -1,6 +1,14 @@
+/*
+Creating 4 carousels, 2 for the Moon and 2 for Mars. 
+In each case, 1 is for training and the other is for testing. 
+We also include 2 pairs of buttons: one for training carousels and the other for testing carousels.
+Finally, we create 4 labels to put Image counters, and in the case of testing, their seismic activities. 
+*/
+
 body {
     font-family: Arial, sans-serif;
     margin: 20px;
+	color: #151B54; 
 }
 
 .appBackground {
@@ -42,6 +50,27 @@ Width is greater.
 /*********************************************************/
 /*********************************************************/
 /*********************************************************/
+/***********TABlE WITH INFORMATION SECTION****************/
+
+/*
+table { 
+
+border-spacing: 10px; 
+
+}
+*/
+
+th, td { 
+
+       padding: 15px;
+       border-bottom: 15px;
+       border-top: 5px;
+
+}
+
+/*********************************************************/
+/*********************************************************/
+/*********************************************************/
 /********************TABS SECTION*************************/
 
 /*
@@ -78,14 +107,14 @@ Width is greater.
 	  Removed to put the next one: 
 	  background:white;
 	*/
-	background-color: rgba(255, 255, 255, .4);
+	background-color: rgba(255, 255, 255, .5);
 	
 	opacity: 0;
     transition: opacity 0.999999s ease-in-out;
 
 }
 
-.tab-content:active{
+.tab-content.active{
       opacity:1;
 }
 
@@ -299,12 +328,31 @@ strong {
 /******************carousel SECTION**********************/
 
 
-.carousel-label {
+.carousel-label2 {
     transform: translateY(140%);
     font-weight: bold;
     font-size: 1.8em;
 }
 
+.carousel-label3 {
+    transform: translateY(110%);
+    font-weight: bold;
+    font-size: 1.8em;
+}
+
+
+.carousel-label21 {
+    transform: translateY(180%);
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+
+.carousel-label31 {
+    transform: translateY(180%);
+    font-weight: bold;
+    font-size: 1.3em;
+}
 
 .carousel {
     position: relative;
@@ -314,27 +362,72 @@ strong {
 	
 }
 
-.carousel-image {
+.carousel-image2 {
     display: none;
     width: 100%;
 	transform: translateY(10%);
-    visibility: hidden; 
-	
+    
 	/*
 	Blue border to the images.
 	*/
 	border: 4px solid #0000ff;
- 
-	opacity: 0;
-	transition: opacity 0.3s ease-in-out;
+	
+}
+
+.carousel-image21 {
+    display: none;
+    width: 100%;
+	transform: translateY(10%);
+    
+	/*
+	Blue border to the images.
+	*/
+	border: 4px solid #0000ff;
+	
+}
+
+.carousel-image3 {
+    display: none;
+    width: 100%;
+	transform: translateY(10%);
+    
+	/*
+	Blue border to the images.
+	*/
+	border: 4px solid #0000ff;
+	
+}
+
+.carousel-image31 {
+    display: none;
+    width: 100%;
+	transform: translateY(10%);
+    
+	/*
+	Blue border to the images.
+	*/
+	border: 4px solid #0000ff;
+	
+}
+
+.carousel-image2.active {	
+    display: block;
 
 }
 
-.carousel-image.active {
-	visibility: visible;
-    opacity: 1; 
+.carousel-image3.active {	
     display: block;
 
+}
+
+.carousel-image21.active {	
+    display: block;
+
+}
+
+.carousel-image31.active {	
+    display: block;
+	
 }
 
 .carousel-button {
@@ -363,4 +456,34 @@ strong {
 
 .carousel-button:last-of-type {
     right: 10px;
+}
+
+/*------------------------------------------*/
+
+.carousel-button-test {
+    position: absolute;
+    top: 8%;
+    transform: translateY(-50%);
+	transform: scale(3);    
+
+    /*
+	Buttons have a color similar to the background.
+	*/
+    background-color: rgba(255, 255, 255, 0);
+	
+    border: none;
+    padding: 0px;
+    cursor: pointer;
+}
+
+.carousel-button-test:active {
+    color: #0000ff;
+}
+
+.carousel-button-test:first-of-type {
+    left: -30px;
+}
+
+.carousel-button-test:last-of-type {
+    right: -30px;
 }
