@@ -35,7 +35,7 @@ The project is organized with the following folder structure:
 .
 ├── scripts/        # Scripts used for the creation and deployment of the dashboard
 ├── src/            # All the notebooks and datasets necessary for the pre-processing and training.
-├── static/         # All images used in the project
+├── static/         # All images used in the project. It also includes both training and testing images.
 ├── css/            # Style files for the dashboard.
 ├── index.html      # Main page of the dashboard. 
 ├── .gitignore
