@@ -1,3 +1,10 @@
+<!--
+Creating 4 carousels, 2 for the Moon and 2 for Mars. 
+In each case, 1 is for training and the other is for testing. 
+We also include 2 pairs of buttons: one for training carousels and the other for testing carousels.
+Finally, we create 4 labels to put Image counters, and in the case of testing, their seismic activities. 
+-->
+
 <!DOCTYPE html>
 
 <html lang="en">
@@ -11,12 +18,13 @@
 	
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@splidejs/splide@latest/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-	
+
+
 </head>
 
-	
+
 <body class="appBackground">
 
     <div class="headers-container">
@@ -85,187 +93,249 @@
        	
         </div>		
 
-	
-        <div id="tab1" class="tab-content" color="white"> <!-- style="display:none;" -->
-		
-            <h2>Welcome to Waverse!!!</h2>
-			
-			<h3>Waverse is an analytical tool focused on seismic activity, for both the Moon and Mars data but with additional insights.</h2>
-			
-			<h3>Check one of the tabs to get more information. </h2>
-				
-            <h2>Authors:</h2>
-            <h3>Castillo, Aaron </h3>
+	    <!-- ************************************************************************************************* -->
+        <!-- ************************************************************************************************* -->
+        <!-- ************************************************************************************************* -->
 
-            <h3>Subias, Gilberto</h3>
-            <h3>Sanchez, Amiel </h3>
+        <div id="tab1" class="tab-content" color="white">
+		
+            <center><h2>Welcome to WAVERSE!!!</h2><h8>by Code of Duty</h8></center>
 			
-			<h3> Cites: Image taken from here: https://www.vecteezy.com/photo/48616459-serenity-venus-with-its-thick-atmosphere-illuminated-by-the-suns-rays-in-golden-glow-background-and-nature</h3>
+			<br>
+			
+			<h3>WAVERSE is an Artificial Intelligence end-to-end pipeline that first identifies potential seismic events and then extracts features for deeper analysis.</h3> 
+			
+			<h3>By processing NASA data from the Moon and Mars, the project employs the following models to classify seismic events.</h3>
+			
+			<ul>
+			
+                 <li><h3>XGBoost</h3></li>
+                 <li><h3>Recurrent Neural Network (RNN)</h3></li>
+				 
+            </ul> 
+			
+			<h3><b> Note: these were trained by using Google Colab and in the case of RNN, the GPU option. </b></h3>
+
+			<br>
+			
+			<h3>After this, we get the catalog’s information for each observation that our best classifier predicts as seismic.</h3>
+			
+			<h3>The final output is a catalog of true seismic events along with detailed plots for analysis which are deployed in an user-friendly interface.</h3>
+			
+			<h3>You can check each one of the tabs to get more information. </h2>
+			
+			<br>
+			
+            <h3> The final predictions file can be found <a href="https://github.com/amcm329/codeofduty_nasa_space_apps_2024/blob/main/src/all_predictions.csv">here</a> </h3>
+			
+			<br>
+			
+			<h3> Considering that this website is only meant for visualization purposes and given the limited resources, if you want to deep dive into both the technical and analytical process, enter this <a href="https://github.com/amcm329/codeofduty_nasa_space_apps_2024/tree/main/src">site</a></h3>
+			
+			<br>
+			
+			<center><h2>Improvements and Extensions</h2></center>
+			
+			<h3> The main setback regarding the analysis had to do with the scarcity of data, especially in Mars. Therefore, for the first improvement, we would find more information about these phenomena. <h3>
+			
+			<h3> Secondly, for a more nurtured visual experience, we would include more dynamic dashboards that are aligned in real-time with the proper EDA and analytical processes. <h3>
+			
+			<h3> Finally, we wish to expand these analysis to the Earth, Sun and in general, any planet whose information is available. <h3>
+			
+			<br>
+			
+            <center><h2>Authors</h2></center>
+            
+			<center>
+			
+			       <table>
+  
+                          <tr>
+                              <th><h2><a href="https://www.linkedin.com/in/amcm329/">Aaron Castillo</a></h2></th>
+                              <th><h2><a href="https://www.linkedin.com/in/gilberto-s-a64757121/">Gilberto Subias</a></h2></th>
+                              <th><h2><a href="https://www.linkedin.com/in/javier-amiel-irais-s%C3%A1nchez-silva-86a309167/">Javier Sanchez</a></h2></th>
+                          </tr>
+  
+                          <tr>
+	                          <td> <img src="static/team/Aaron_Castillo.jpg" width="250 px" height="250 px"> </td>
+                              <td> <img src="static/team/Gilberto_Subias_Garcia.jpeg" width="250 px" height="250 px"> </td>
+                              <td> <img src="static/team/Javier_Sanchez.png" width="250 px" height="250 px"> </td>
+                          </tr>
+					   
+                   </table>
+			
+			</center>
+			
+			
+			<h3> Background image was taken from <a href="https://www.vecteezy.com/photo/48616459-serenity-venus-with-its-thick-atmosphere-illuminated-by-the-suns-rays-in-golden-glow-background-and-nature">here</a>.</h3>
 			
         </div>
 
+        <!-- ************************************************************************************************* -->
+        <!-- ************************************************************************************************* -->
+        <!-- ************************************************************************************************* -->
 
-        <div id="tab2" class="tab-content"> <!-- style="display:none;" -->
+        <div id="tab2" class="tab-content">
 		
-		    <h2>Exploratory Data Analysis</h2>
-		    
-			<h3>This part corresponds to a visual representation of the information .</h2>
+		    <center><h2>Exploratory Data Analysis</h2></center>
+            
+			<h3>This part corresponds to a simple but detailed plot of the information provided by the corresponding training section:</h2>
 		
             <div class="carousel">
 
- 	            <center><div class="carousel-label" id="image-label">Image: 1/75</div></center>
+ 	            <center><div class="carousel-label2" id="image-label2">Image: 1/75</div></center>
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-01-19HR00_evid00002.png" class="carousel-image active" alt="1970-01-19T20:25:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-01-19HR00_evid00002.png" class="carousel-image2 active" alt="1970-01-19T20:25:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-03-25HR00_evid00003.png" class="carousel-image" alt="1970-03-25T03:32:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-03-25HR00_evid00003.png" class="carousel-image2" alt="1970-03-25T03:32:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-03-26HR00_evid00004.png" class="carousel-image" alt="1970-03-26T20:17:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-03-26HR00_evid00004.png" class="carousel-image2" alt="1970-03-26T20:17:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-04-25HR00_evid00006.png" class="carousel-image" alt="1970-04-25T01:14:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-04-25HR00_evid00006.png" class="carousel-image2" alt="1970-04-25T01:14:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-04-26HR00_evid00007.png" class="carousel-image" alt="1970-04-26T14:29:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-04-26HR00_evid00007.png" class="carousel-image2" alt="1970-04-26T14:29:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-06-15HR00_evid00008.png" class="carousel-image" alt="1970-06-15T19:00:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-06-15HR00_evid00008.png" class="carousel-image2" alt="1970-06-15T19:00:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-06-26HR00_evid00009.png" class="carousel-image" alt="1970-06-26T20:01:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-06-26HR00_evid00009.png" class="carousel-image2" alt="1970-06-26T20:01:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-07-20HR00_evid00010.png" class="carousel-image" alt="1970-07-20T05:06:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-07-20HR00_evid00010.png" class="carousel-image2" alt="1970-07-20T05:06:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-07-20HR00_evid00011.png" class="carousel-image" alt="1970-07-20T11:44:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-07-20HR00_evid00011.png" class="carousel-image2" alt="1970-07-20T11:44:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-09-26HR00_evid00013.png" class="carousel-image" alt="1970-09-26T19:57:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-09-26HR00_evid00013.png" class="carousel-image2" alt="1970-09-26T19:57:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-10-24HR00_evid00014.png" class="carousel-image" alt="1970-10-24T11:31:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-10-24HR00_evid00014.png" class="carousel-image2" alt="1970-10-24T11:31:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-11-12HR00_evid00015.png" class="carousel-image" alt="1970-11-12T12:50:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-11-12HR00_evid00015.png" class="carousel-image2" alt="1970-11-12T12:50:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-12-11HR00_evid00017.png" class="carousel-image" alt="1970-12-11T07:22:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-12-11HR00_evid00017.png" class="carousel-image2" alt="1970-12-11T07:22:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-12-27HR00_evid00019.png" class="carousel-image" alt="1970-12-27T20:34:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-12-27HR00_evid00019.png" class="carousel-image2" alt="1970-12-27T20:34:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1970-12-31HR00_evid00021.png" class="carousel-image" alt="1970-12-31T15:41:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1970-12-31HR00_evid00021.png" class="carousel-image2" alt="1970-12-31T15:41:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-01-15HR00_evid00022.png" class="carousel-image" alt="1971-01-15T12:40:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-01-15HR00_evid00022.png" class="carousel-image2" alt="1971-01-15T12:40:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-01-28HR00_evid00023.png" class="carousel-image" alt="1971-01-28T14:59:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-01-28HR00_evid00023.png" class="carousel-image2" alt="1971-01-28T14:59:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-01-29HR00_evid00024.png" class="carousel-image" alt="1971-01-29T18:21:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-01-29HR00_evid00024.png" class="carousel-image2" alt="1971-01-29T18:21:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-02-09HR00_evid00026.png" class="carousel-image" alt="1971-02-09T03:42:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-02-09HR00_evid00026.png" class="carousel-image2" alt="1971-02-09T03:42:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-03-25HR00_evid00028.png" class="carousel-image" alt="1971-03-25T15:18:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-03-25HR00_evid00028.png" class="carousel-image2" alt="1971-03-25T15:18:00">
 
                 <!-- img src="static/moon/eda/xa.s12.00.mhz.1971-04-13HR00_evid00029.png" class="carousel-image" alt="1971-04-13T12:55:00" -->
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-04-17HR00_evid00030.png" class="carousel-image" alt="1971-04-17T07:04:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-04-17HR00_evid00030.png" class="carousel-image2" alt="1971-04-17T07:04:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-05-12HR00_evid00031.png" class="carousel-image" alt="1971-05-12T08:05:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-05-12HR00_evid00031.png" class="carousel-image2" alt="1971-05-12T08:05:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-05-12HR00_evid00032.png" class="carousel-image" alt="1971-05-12T09:45:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-05-12HR00_evid00032.png" class="carousel-image2" alt="1971-05-12T09:45:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-05-13HR00_evid00033.png" class="carousel-image" alt="1971-05-13T03:00:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-05-13HR00_evid00033.png" class="carousel-image2" alt="1971-05-13T03:00:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-05-23HR00_evid00034.png" class="carousel-image" alt="1971-05-23T22:20:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-05-23HR00_evid00034.png" class="carousel-image2" alt="1971-05-23T22:20:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-06-12HR00_evid00035.png" class="carousel-image" alt="1971-06-12T10:51:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-06-12HR00_evid00035.png" class="carousel-image2" alt="1971-06-12T10:51:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-09-25HR00_evid00042.png" class="carousel-image" alt="1971-09-25T08:57:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-09-25HR00_evid00042.png" class="carousel-image2" alt="1971-09-25T08:57:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-10-18HR00_evid00043.png" class="carousel-image" alt="1971-10-18T03:19:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-10-18HR00_evid00043.png" class="carousel-image2" alt="1971-10-18T03:19:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-10-20HR00_evid00044.png" class="carousel-image" alt="1971-10-20T18:08:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-10-20HR00_evid00044.png" class="carousel-image2" alt="1971-10-20T18:08:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-10-31HR00_evid00045.png" class="carousel-image" alt="1971-10-31T05:30:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-10-31HR00_evid00045.png" class="carousel-image2" alt="1971-10-31T05:30:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1971-11-14HR00_evid00046.png" class="carousel-image" alt="1971-11-14T04:17:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1971-11-14HR00_evid00046.png" class="carousel-image2" alt="1971-11-14T04:17:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1972-01-04HR00_evid00049.png" class="carousel-image" alt="1972-01-04T06:35:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-01-04HR00_evid00049.png" class="carousel-image2" alt="1972-01-04T06:35:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1972-03-12HR00_evid00052.png" class="carousel-image" alt="1972-03-12T18:00:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-03-12HR00_evid00052.png" class="carousel-image2" alt="1972-03-12T18:00:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1972-05-11HR00_evid00055.png" class="carousel-image" alt="1972-05-11T13:35:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-05-11HR00_evid00055.png" class="carousel-image2" alt="1972-05-11T13:35:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1972-06-16HR00_evid00060.png" class="carousel-image" alt="1972-06-16T16:11:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-06-16HR00_evid00060.png" class="carousel-image2" alt="1972-06-16T16:11:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1972-07-17HR00_evid00067.png" class="carousel-image" alt="1972-07-17T07:50:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-07-17HR00_evid00067.png" class="carousel-image2" alt="1972-07-17T07:50:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1972-07-17HR00_evid00068.png" class="carousel-image" alt="1972-07-17T21:56:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-07-17HR00_evid00068.png" class="carousel-image2" alt="1972-07-17T21:56:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1972-07-28HR00_evid00070.png" class="carousel-image" alt="1972-07-28T02:23:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-07-28HR00_evid00070.png" class="carousel-image2" alt="1972-07-28T02:23:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1972-07-31HR00_evid00071.png" class="carousel-image" alt="1972-07-31T18:08:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-07-31HR00_evid00071.png" class="carousel-image2" alt="1972-07-31T18:08:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1972-12-02HR00_evid00083.png" class="carousel-image" alt="1972-12-02T07:58:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-12-02HR00_evid00083.png" class="carousel-image2" alt="1972-12-02T07:58:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1972-12-03HR00_evid00084.png" class="carousel-image" alt="1972-12-03T02:38:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1972-12-03HR00_evid00084.png" class="carousel-image2" alt="1972-12-03T02:38:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-01-18HR00_evid00088.png" class="carousel-image" alt="1973-01-18T23:01:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-01-18HR00_evid00088.png" class="carousel-image2" alt="1973-01-18T23:01:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-01-31HR00_evid00091.png" class="carousel-image" alt="1973-01-31T00:44:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-01-31HR00_evid00091.png" class="carousel-image2" alt="1973-01-31T00:44:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-03-01HR00_evid00093.png" class="carousel-image" alt="1973-03-01T07:15:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-03-01HR00_evid00093.png" class="carousel-image2" alt="1973-03-01T07:15:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-03-13HR00_evid00094.png" class="carousel-image" alt="1973-03-13T08:01:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-03-13HR00_evid00094.png" class="carousel-image2" alt="1973-03-13T08:01:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-03-24HR00_evid00097.png" class="carousel-image" alt="1973-03-24T19:23:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-03-24HR00_evid00097.png" class="carousel-image2" alt="1973-03-24T19:23:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-05-14HR00_evid00104.png" class="carousel-image" alt="1973-05-14T00:44:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-05-14HR00_evid00104.png" class="carousel-image2" alt="1973-05-14T00:44:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-06-05HR00_evid00107.png" class="carousel-image" alt="1973-06-05T02:38:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-06-05HR00_evid00107.png" class="carousel-image2" alt="1973-06-05T02:38:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-06-05HR00_evid00108.png" class="carousel-image" alt="1973-06-05T11:10:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-06-05HR00_evid00108.png" class="carousel-image2" alt="1973-06-05T11:10:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-06-18HR00_evid00109.png" class="carousel-image" alt="1973-06-18T01:42:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-06-18HR00_evid00109.png" class="carousel-image2" alt="1973-06-18T01:42:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-06-27HR00_evid00112.png" class="carousel-image" alt="1973-06-27T18:36:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-06-27HR00_evid00112.png" class="carousel-image2" alt="1973-06-27T18:36:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-03HR00_evid00113.png" class="carousel-image" alt="1973-07-03T18:15:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-03HR00_evid00113.png" class="carousel-image2" alt="1973-07-03T18:15:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-04HR00_evid00114.png" class="carousel-image" alt="1973-07-04T02:46:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-04HR00_evid00114.png" class="carousel-image2" alt="1973-07-04T02:46:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-20HR00_evid00117.png" class="carousel-image" alt="1973-07-20T19:02:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-20HR00_evid00117.png" class="carousel-image2" alt="1973-07-20T19:02:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-28HR00_evid00120.png" class="carousel-image" alt="1973-07-28T00:52:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-28HR00_evid00120.png" class="carousel-image2" alt="1973-07-28T00:52:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-29HR00_evid00121.png" class="carousel-image" alt="1973-07-29T23:31:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-07-29HR00_evid00121.png" class="carousel-image2" alt="1973-07-29T23:31:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1973-08-21HR00_evid00127.png" class="carousel-image" alt="1973-08-21T12:17:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1973-08-21HR00_evid00127.png" class="carousel-image2" alt="1973-08-21T12:17:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-01-10HR00_evid00136.png" class="carousel-image" alt="1974-01-10T23:21:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-01-10HR00_evid00136.png" class="carousel-image2" alt="1974-01-10T23:21:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-02-07HR00_evid00137.png" class="carousel-image" alt="1974-02-07T06:21:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-02-07HR00_evid00137.png" class="carousel-image2" alt="1974-02-07T06:21:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-02-12HR00_evid00138.png" class="carousel-image" alt="1974-02-12T22:30:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-02-12HR00_evid00138.png" class="carousel-image2" alt="1974-02-12T22:30:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-03-25HR00_evid00140.png" class="carousel-image" alt="1974-03-25T16:58:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-03-25HR00_evid00140.png" class="carousel-image2" alt="1974-03-25T16:58:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-04-08HR00_evid00141.png" class="carousel-image" alt="1974-04-08T08:40:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-04-08HR00_evid00141.png" class="carousel-image2" alt="1974-04-08T08:40:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-04-19HR00_evid00142.png" class="carousel-image" alt="1974-04-19T18:34:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-04-19HR00_evid00142.png" class="carousel-image2" alt="1974-04-19T18:34:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-04-26HR00_evid00144.png" class="carousel-image" alt="1974-04-26T09:18:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-04-26HR00_evid00144.png" class="carousel-image2" alt="1974-04-26T09:18:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-04-27HR00_evid00145.png" class="carousel-image" alt="1974-04-27T14:18:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-04-27HR00_evid00145.png" class="carousel-image2" alt="1974-04-27T14:18:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-06-25HR00_evid00149.png" class="carousel-image" alt="1974-06-25T00:23:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-06-25HR00_evid00149.png" class="carousel-image2" alt="1974-06-25T00:23:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-07-06HR00_evid00150.png" class="carousel-image" alt="1974-07-06T02:57:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-07-06HR00_evid00150.png" class="carousel-image2" alt="1974-07-06T02:57:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-07-06HR00_evid00151.png" class="carousel-image" alt="1974-07-06T14:14:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-07-06HR00_evid00151.png" class="carousel-image2" alt="1974-07-06T14:14:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-07-11HR00_evid00152.png" class="carousel-image" alt="1974-07-11T00:52:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-07-11HR00_evid00152.png" class="carousel-image2" alt="1974-07-11T00:52:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-07-17HR00_evid00153.png" class="carousel-image" alt="1974-07-17T12:05:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-07-17HR00_evid00153.png" class="carousel-image2" alt="1974-07-17T12:05:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1974-10-14HR00_evid00156.png" class="carousel-image" alt="1974-10-14T17:43:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1974-10-14HR00_evid00156.png" class="carousel-image2" alt="1974-10-14T17:43:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1975-04-12HR00_evid00191.png" class="carousel-image" alt="1975-04-12T18:15:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1975-04-12HR00_evid00191.png" class="carousel-image2" alt="1975-04-12T18:15:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1975-05-04HR00_evid00192.png" class="carousel-image" alt="1975-05-04T10:05:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1975-05-04HR00_evid00192.png" class="carousel-image2" alt="1975-05-04T10:05:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1975-06-24HR00_evid00196.png" class="carousel-image" alt="1975-06-24T16:03:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1975-06-24HR00_evid00196.png" class="carousel-image2" alt="1975-06-24T16:03:00">
 
-                <img src="static/moon/eda/xa.s12.00.mhz.1975-06-26HR00_evid00198.png" class="carousel-image" alt="1975-06-26T03:24:00">
+                <img src="static/moon/eda/xa.s12.00.mhz.1975-06-26HR00_evid00198.png" class="carousel-image2" alt="1975-06-26T03:24:00">
             
 			    <button class="carousel-button" onclick="changeImageCarousel2(-1)">&#10094;</button>
           
@@ -273,40 +343,288 @@
 				
             </div>
   
-  
-          <br>
+            <br>
 		  
-		  <br>
+		    <br>
 		
-  		  <div class="controls">
-                
-				<label for="data2">Hours:</label>
+		    <br>
+		
+			<br>
+		
+	        <center><h2>Testing</h2></center>
+            
+		    <h3>Now, we plot the files related to the testing section based on our <a href="https://github.com/amcm329/codeofduty_nasa_space_apps_2024/tree/main/src">analysis</a>, along with their predictions: </h2>
+		   
+  		 	<div class="carousel"> 
+
+ 	            <center><div class="carousel-label21" id="image-label21">Image: 1/96. Seismic activity detected: True</div></center>
 				
-                <input type="range" id="data2" min="1" max="100" value="50" oninput="updateChart2()">
+                <img src="static/moon/test/xa.s12.00.mhz.1971-10-26HR00_evid00133.png" class="carousel-image21 active">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1974-10-02HR00_evid00572.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1972-11-19HR00_evid00335.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-03-14HR00_evid00018.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1974-03-14HR00_evid00506.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1971-10-06HR00_evid00125.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1973-04-23HR00_evid00399.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1971-01-03HR00_evid00057.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1971-06-11HR00_evid00096.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1972-02-28HR00_evid00192.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-05-24HR00_evid00028.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1969-12-16HR00_evid00006.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-11-03HR00_evid00050.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1971-03-15HR00_evid00073.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1974-03-30HR00_evid00512.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1975-04-21HR00_evid00638.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1971-10-06HR00_evid00124.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-09-09HR00_evid00043.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1975-05-16HR00_evid00651.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1972-11-14HR00_evid00331.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1971-11-24HR00_evid00156.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-04-03HR00_evid00021.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-01-09HR00_evid00007.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1974-05-09HR00_evid00522.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-07-20HR00_evid00037.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1972-02-21HR00_evid00190.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1971-06-27HR00_evid00101.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1972-12-15HR00_evid00349.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1973-10-03HR03_evid00461.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1972-05-15HR00_evid00223.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-05-25HR00_evid00029.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-11-03HR00_evid00051.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1972-05-19HR00_evid00228.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1973-10-10HR00_evid00463.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-06-19HR00_evid00031.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-07-18HR00_evid00036.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1975-06-15HR00_evid00660.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1977-04-26HR00_evid00924.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1977-07-19HR00_evid00991.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1975-06-17HR00_evid00662.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1977-04-11HR00_evid00915.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1973-11-22HR00_evid00475.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1972-12-06HR00_evid00342.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1974-07-25HR05_evid00553.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-05-23HR00_evid00027.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-07-27HR00_evid00039.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-07-17HR00_evid00035.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1973-08-08HR00_evid00437.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1971-01-17HR00_evid00060.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1977-09-13HR00_evid01012.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1971-04-08HR01_evid00083.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1971-01-05HR00_evid00059.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1973-03-12HR00_evid00384.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1974-06-30HR00_evid00543.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1972-12-02HR00_evid00341.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1975-05-20HR00_evid00652.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-10-26HR00_evid00049.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1972-01-26HR00_evid00186.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-02-07HR00_evid00014.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-05-20HR00_evid00026.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1977-04-24HR00_evid00923.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1971-05-22HR00_evid00092.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-02-18HR00_evid00016.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s12.00.mhz.1970-03-30HR00_evid00020.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1973-08-10HR00_evid00126.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1973-04-04HR00_evid00098.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1974-10-19HR00_evid00157.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1973-10-27HR00_evid00134.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1974-11-17HR00_evid00162.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1974-12-15HR00_evid00170.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1975-04-12HR00_evid00190.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1974-11-21HR00_evid00166.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1974-12-15HR00_evid00169.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1975-06-22HR00_evid00194.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1974-02-06HR00_evid00497.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1974-06-16HR00_evid00536.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1975-05-20HR00_evid00653.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1974-06-30HR00_evid00542.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s15.00.mhz.1974-08-04HR00_evid00557.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1972-11-08HR00_evid00080.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1972-09-10HR00_evid00075.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1972-11-06HR00_evid00079.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1972-11-14HR00_evid00081.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1973-07-31HR00_evid00123.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1974-05-19HR00_evid00146.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1974-12-12HR02_evid00168.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1974-11-11HR00_evid00160.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1974-12-15HR00_evid00172.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1974-12-25HR00_evid00174.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1975-03-26HR00_evid00186.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1975-02-19HR00_evid00180.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1977-04-17HR00_evid00249.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1977-06-02HR00_evid00255.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1973-08-25HR00_evid00443.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1974-11-14HR00_evid00587.png" class="carousel-image21">
+
+                <img src="static/moon/test/xa.s16.00.mhz.1973-12-18HR00_evid00487.png" class="carousel-image21">
+
+			    <button class="carousel-button-test" onclick="changeImageCarousel21(-1)">&#10094;</button>
+          
+			    <button class="carousel-button-test" onclick="changeImageCarousel21(1)">&#10095;</button>
 				
-            </div>
-			
-            <canvas id="myChart2"></canvas>
-			
+            </div>        
+				
         </div>
-
-
-
-
-
-
       
+        <!-- ************************************************************************************************* -->
+        <!-- ************************************************************************************************* -->
+        <!-- ************************************************************************************************* -->
+        <!-- ************************************************************************************************* -->
 
-
-        <div id="tab3" class="tab-content"> <!-- style="display:none;" -->
+        <div id="tab3" class="tab-content">
+		 
+		    <center><h2>Exploratory Data Analysis</h2></center>
+            
+			<h3>This part corresponds to a simple but detailed plot of the information provided by the corresponding training section:</h2>
 		
-            <div class="controls">
-                <label for="data3">Data Count:</label>
-                <input type="range" id="data3" min="1" max="100" value="50" oninput="updateChart3()">
-            </div>
-            <canvas id="myChart3"></canvas>
+  		    <div class="carousel"> 
+
+ 	            <center><div class="carousel-label3" id="image-label3">Image: 1/2</div></center>
+				
+                <img src="static/mars/eda/XB.ELYSE.02.BHV.2022-02-03HR08_evid0005.png" class="carousel-image3 active" alt="2022-02-03HR08">
+
+                <img src="static/mars/eda/XB.ELYSE.02.BHV.2022-01-02HR04_evid0006.png" class="carousel-image3" alt="2022-01-02HR04">
+
+			    <button class="carousel-button" onclick="changeImageCarousel3(-1)">&#10094;</button>
+          
+			    <button class="carousel-button" onclick="changeImageCarousel3(1)">&#10095;</button>
+				
+            </div>        
+				
+            <br>
+		  
+	   	    <br>
+			
+			<br>
+		
+			<br>
+		
+	        <center><h2>Testing</h2></center>
+            
+  		    <h3>Now, we plot the files related to the testing section based on our <a href="https://github.com/amcm329/codeofduty_nasa_space_apps_2024/tree/main/src">analysis</a>, along with their predictions: </h2>
+			
+ 		    <div class="carousel"> 
+
+ 	            <center><div class="carousel-label31" id="image-label31">Image: 1/9. Seismic activity detected: True</div></center>
+
+                <img src="static/mars/test/XB.ELYSE.02.BHV.2021-05-02HR01_evid0017.png" class="carousel-image31 active">
+
+                <img src="static/mars/test/XB.ELYSE.02.BHV.2019-07-26HR12_evid0033.png" class="carousel-image31">
+
+                <img src="static/mars/test/XB.ELYSE.02.BHV.2021-10-11HR23_evid0011.png" class="carousel-image31">
+
+                <img src="static/mars/test/XB.ELYSE.02.BHV.2022-04-09HR22_evid0002.png" class="carousel-image31">
+
+                <img src="static/mars/test/XB.ELYSE.02.BHV.2019-07-26HR12_evid0034.png" class="carousel-image31">
+
+                <img src="static/mars/test/XB.ELYSE.02.BHV.2019-05-23HR02_evid0041.png" class="carousel-image31">
+
+                <img src="static/mars/test/XB.ELYSE.02.BHV.2022-05-04HR23_evid0001.png" class="carousel-image31">
+
+                <img src="static/mars/test/XB.ELYSE.02.BHV.2021-12-24HR22_evid0007.png" class="carousel-image31">
+
+                <img src="static/mars/test/XB.ELYSE.02.BHV.2019-09-21HR03_evid0032.png" class="carousel-image31">
+				
+			    <button class="carousel-button-test" onclick="changeImageCarousel31(-1)">&#10094;</button>
+          
+			    <button class="carousel-button-test" onclick="changeImageCarousel31(1)">&#10095;</button>
+				
+            </div>        
+				
         </div>
-		
 		
 		
     </div>
