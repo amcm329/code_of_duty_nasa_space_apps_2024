@@ -33,7 +33,7 @@ The project is organized with the following folder structure:
 
 ```
 .
-├── src/            # All the notebooks and datasets necessary for the pre-processing and training.
+├── src/            # All the notebooks and datasets necessary for the pre-processing and training. The catalog final file is included here.
 ├── scripts/        # Scripts used for the creation and deployment of the dashboard
 ├── static/         # All images used in the project. It also includes both training and testing images.
 ├── css/            # Style files for the dashboard.
